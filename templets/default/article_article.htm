@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="yes" name="apple-touch-fullscreen">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport" />
+<link rel="stylesheet" href="/skin/css/font-awesome.css">
+<link rel="stylesheet" href="/skin/css/global.css">
+<link rel="stylesheet" href="/skin/css/widget.css">
+<link rel="stylesheet" href="/skin/css/variouscomponents.css">
+<link rel="stylesheet" href="/skin/css/theme.css">
+<link rel="stylesheet" href="/skin/css/color_0.css">
+<link rel="stylesheet" href="/skin/css/images.css">
+<script src="/skin/js/jquery-1.11.3.min.js"></script>
+<!--[if !IE]><!-->
+<script src="/skin/js/base.js"></script>
+<!--<![endif]-->
+<!--[if gte IE 9]>
+<script src="/skin/js/base.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+      <link rel="stylesheet" href="/skin/css/font-awesome-ie7.min.css">
+      <script src="/skin/js/selectivizr.js"></script>
+      <script src="/skin/js/html5shiv.min.js"></script>
+      <script src="/skin/js/respond.min.js"></script>
+      <script src="/skin/js/modernizr.min.js"></script>
+    <![endif]-->
+<!--这套模板独有的js-->
+<link href="/skin/css/lightbox.min.css" rel="stylesheet">
+<script src="/skin/js/jquery.superslide.js"></script>
+<script src="/skin/js/common.js"></script>
+<script src="/skin/js/theme.js"></script>
+<!-- feib -->
+<script type="text/javascript" src="/skin/js/layer.js"></script>
+<script type="text/javascript" src="/skin/js/language.js"></script>
+<script type="text/javascript" src="/skin/js/ajax-url.js"></script>
+<!-- plugins -->
+<script type="text/javascript" src="/skin/js/jquery.formsvalidation.js"></script>
+<script type="text/javascript" src="/skin/js/jquery.nodecommon.js"></script>
+<script type="text/javascript" src="/skin/js/extend.js"></script>
+<link rel="stylesheet" href="/skin/css/animate.min.css">
+<script src="/skin/js/animate.min.js"></script>
+<script type="text/javascript" src="/skin/js/components.js"></script>
+<script type="text/javascript" src="/skin/js/jquery.menu_style.js"></script>
+<script type="text/javascript" src="/skin/js/jquery.init.js"></script>
+<script type="text/javascript">
+$(function(){
+    dataAnimate();
+    (function($,lanno){
+        if(lanno === "" || lanno === "default"){
+            return '';
+        }
+        $(".w-languege").each(function(){
+            $(this).find("a").each(function(){
+                if($(this).data("lanno") === lanno){
+                    $(this).addClass("cur");
+                }else{
+                    if($(this).hasClass("cur")){
+                        $(this).removeClass("cur");
+                    }
+                }
+            });
+        });
+    })(jQuery,"cn");
+});
+</script>
+</head>
+<body>
+<script>var page = {pageId:24263};</script>
+<div class="body"> {dede:include filename="head.htm"/}
+  <div class="w-container w-main">
+    <div class="row">
+      <div class="wrap-content-in w-system w-productcom">
+        <div class="w-system-in"> 
+          <!--新闻详情-->
+          <div class="newsDetail">
+            <div class="newsDetail-in">
+              <div class="newsTitle">{dede:field.title/}</div>
+              <div class="newsST"> <span class="newsTime">发布时间：{dede:field.pubdate function="MyDate('Y-m-d',@me)"/}</span> </div>
+              <div class="newsSummary"></div>
+              <div class="newsContent">
+                <div class="newsContent-in"> {dede:field.body/} </div>
+              </div>
+              <div class="news-others">
+                <div class="news-prev"> {dede:prenext get='pre'/}</div>
+                <div class="news-next"> {dede:prenext get='next'/}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--新闻详情 end--> 
+      </div>
+      <input type="hidden" name="article-id" value="30922"/>
+    </div>
+  </div>
+  {dede:include filename="footer.htm"/} </div>
+<script type="text/javascript" src="/skin/js/jquery.global.js"></script> 
+<script type="text/javascript" src="/skin/js/jquery.form.js"></script> 
+<script type="text/javascript" src="/skin/js/lightbox.min.js"></script> 
+<script type="text/javascript" src="/skin/js/jquery.news_detail.js"></script>
+</body>
+</html>

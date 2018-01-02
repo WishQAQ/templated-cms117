@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="yes" name="apple-touch-fullscreen">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}"/>
+<meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport" />
+<link rel="stylesheet" href="/skin/css/font-awesome.css">
+<link rel="stylesheet" href="/skin/css/global.css">
+<link rel="stylesheet" href="/skin/css/widget.css">
+<link rel="stylesheet" href="/skin/css/variouscomponents.css">
+<link rel="stylesheet" href="/skin/css/theme.css">
+<link rel="stylesheet" href="/skin/css/color_0.css">
+<link rel="stylesheet" href="/skin/css/images.css">
+<script src="/skin/js/jquery-1.11.3.min.js"></script>
+<!--[if !IE]><!-->
+<script src="/skin/js/base.js"></script>
+<!--<![endif]-->
+<!--[if gte IE 9]>
+<script src="/skin/js/base.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+      <link rel="stylesheet" href="/skin/css/font-awesome-ie7.min.css">
+      <script src="/skin/js/selectivizr.js"></script>
+      <script src="/skin/js/html5shiv.min.js"></script>
+      <script src="/skin/js/respond.min.js"></script>
+      <script src="/skin/js/modernizr.min.js"></script>
+    <![endif]-->
+<!--这套模板独有的js-->
+<link href="/skin/css/lightbox.min.css" rel="stylesheet">
+<script src="/skin/js/jquery.superslide.js"></script>
+<script src="/skin/js/common.js"></script>
+<script src="/skin/js/theme.js"></script>
+<!-- feib -->
+<script type="text/javascript" src="/skin/js/layer.js"></script>
+<script type="text/javascript" src="/skin/js/language.js"></script>
+<script type="text/javascript" src="/skin/js/ajax-url.js"></script>
+<!-- plugins -->
+<script type="text/javascript" src="/skin/js/jquery.formsvalidation.js"></script>
+<script type="text/javascript" src="/skin/js/jquery.nodecommon.js"></script>
+<script type="text/javascript" src="/skin/js/extend.js"></script>
+<link rel="stylesheet" href="/skin/css/animate.min.css">
+<script src="/skin/js/animate.min.js"></script>
+<script type="text/javascript" src="/skin/js/components.js"></script>
+<script type="text/javascript" src="/skin/js/jquery.menu_style.js"></script>
+<script type="text/javascript" src="/skin/js/jquery.init.js"></script>
+<script type="text/javascript">
+$(function(){
+    dataAnimate();
+    (function($,lanno){
+        if(lanno === "" || lanno === "default"){
+            return '';
+        }
+        $(".w-languege").each(function(){
+            $(this).find("a").each(function(){
+                if($(this).data("lanno") === lanno){
+                    $(this).addClass("cur");
+                }else{
+                    if($(this).hasClass("cur")){
+                        $(this).removeClass("cur");
+                    }
+                }
+            });
+        });
+    })(jQuery,"cn");
+});
+</script>
+</head>
+<body>
+<script>var page = {pageId:24266};</script>
+<div class="body"> {dede:include filename="head.htm"/}
+  <div class="w-container w-main">
+    <div class="w-section " >
+      <div class="row" >
+        <div class="row-mask" ></div>
+        <div class="wrap-content-in  " data-id="230764" data-type="31">
+          <div class="li-div">
+            <div class="w-space space-b noChoose"  style="height:35px;">
+              <div class="stretch-b"></div>
+            </div>
+          </div>
+          <div class="li-div">
+            <div class="not-animated w-title w-title1" data-animate="fadeInDown" style="">
+              <div class="w-title-in">
+                <div class="w-title-inner">
+                  <div class="title-h-in">
+                    <h2 class="color_main color_h" style="">{dede:field name='typename'/}</h2>
+                    <span class="color_vice color_span" style="">{dede:field name='typenameen'/}</span>
+                    <div class="simpline bg_simpline"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="li-div col-li-div" data-id="230767" data-type="1">
+            <div class="col-table">
+              <table class="div-table div-table-first" width="100%" cellspacing="0" data-pid="230764" cellpadding="0" border="0">
+                <tbody>
+                  <tr>
+                    <td class="td-w" width="50%"><div class="div-padding">
+                        <div class="li-div">
+                          <div class="w-space space-b noChoose"  style="height:20px;">
+                            <div class="stretch-b"></div>
+                          </div>
+                        </div>
+                        <div class="li-div col-li-div" data-id="230770" data-type="1">
+                          <div class="col-table">
+                            <table class="div-table" width="100%" cellspacing="0" data-pid="230767" cellpadding="0" border="0">
+                              <tbody>
+                                <tr> {dede:list pagesize ='8'}
+                                  <td class="td-w" width="50%"><div class="div-padding">
+                                      <div class="li-div">
+                                        <div class="not-animated w-simImg imgFloatFull textFade imgScaleSmall imgTextF" data-animate="fadeInUp" style="cursor:pointer;text-align:center;padding-bottom:10px;">
+                                          <div class="image-w"> <a title="[field:title/]" href="[field:arcurl/]" >
+                                            <div class="img"> <img src="[field:picname/]"/> </div>
+                                            <div class="caption w-img-caption">
+                                              <div class="captionbg"></div>
+                                            </div>
+                                            </a> </div>
+                                        </div>
+                                      </div>
+                                      <div class="li-div">
+                                        <div class="w-text"  style="">
+                                          <div style=" text-align:center;">
+                                            <div style="color:#00BDCB;">[field:title/]</div>
+                                            <div style="font-size:88%;"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div></td>
+                                  {/dede:list} </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="li-div">
+            <div class="w-space space-b noChoose"  style="height:80px;">
+              <div class="stretch-b"></div>
+            </div>
+          </div>
+          <style type="text/css">
+    @media (min-width:768px){
+        #Lantern_234dd7ae146086f3ff63d02a9b64da0e>.w-lantern-in li{
+            width:25%;
+        }
+    }
+    .g-cover{
+        display:none;
+    }
+</style>
+          <div class="li-div" id="lantern-234dd7ae146086f3ff63d02a9b64da0e">
+            <div class="not-animated w-lantern w-lantern-h w-lantern-text-mask" data-animate="zoomIn" style="" id="Lantern_234dd7ae146086f3ff63d02a9b64da0e">
+              <div class="w-lantern-in">
+                <ul class="clearfix">
+                  {dede:channel type='son' typeid='2'}
+                  <li>
+                    <div class="lantern-item">
+                      <div class="lantern-item-in"> <img class="g-cover" src="[field:typeimg/]" style=""/> <a href="javascript:void(0);" target="_self"><span id="2e3a64cf421f3b776220ef4336dc9bad" style="display:none;">none</span></a>
+                        <div class="textbox" style="" >
+                          <div class="textbox_mask"></div>
+                          <div class="text">
+                            <div class="text_in"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  {/dede:channel}
+                </ul>
+                <div class="lantern_pre"></div>
+                <div class="lantern_next"></div>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">
+    var lanternBoxChild_Lantern_234dd7ae146086f3ff63d02a9b64da0e = $('#Lantern_234dd7ae146086f3ff63d02a9b64da0e').find('.w-lantern-in').html();
+    function lantern234dd7ae146086f3ff63d02a9b64da0e() {
+        var visX;
+        if ("w-lantern-h" === 'w-lantern-h' && $(window).width() <= 767) {
+            visX = 3;
+        } else {
+            visX = 4;
+        }
+        $('#Lantern_234dd7ae146086f3ff63d02a9b64da0e').slideNew({
+            mainCell: ".w-lantern-in ul",
+            autoPage: false,
+            effect: "leftLoop",
+            interTime: 3000,
+            autoPlay: true,
+            scroll: 1,
+            vis: visX,
+            pageStateCell: ".pageState",
+            prevCell: ".lantern_pre",
+            nextCell: ".lantern_next"
+        });
+        if ($('#Lantern_234dd7ae146086f3ff63d02a9b64da0e').hasClass('w-lantern-v')) {
+            if ($('#Lantern_234dd7ae146086f3ff63d02a9b64da0e').hasClass('w-lantern-text-mask')) {
+            } else {
+                $('#Lantern_234dd7ae146086f3ff63d02a9b64da0e').find('li').each(function (index, element) {
+                    $(this).find('img').css({'max-height': $(this).outerHeight() - $(this).find('.textbox').outerHeight() - 8});
+                });
+            }
+        }
+    }
+    $(window).resize(function () {
+        $('#Lantern_234dd7ae146086f3ff63d02a9b64da0e').find('.w-lantern-in').html(lanternBoxChild_Lantern_234dd7ae146086f3ff63d02a9b64da0e);
+        $(".g-cover").show();
+        lantern234dd7ae146086f3ff63d02a9b64da0e();
+    });
+    $(function () {
+        $(".g-cover").show();
+        lantern234dd7ae146086f3ff63d02a9b64da0e();
+    });
+</script>
+          <div class="li-div" data-comunique="87d55eb2d03179fedcedba3298c28a08">
+            <div class="w-space space-b noChoose"  style="height:140px;">
+              <div class="stretch-b"></div>
+            </div>
+          </div>
+          <div class="pagination-wrapper">
+            <div class="pagination"> {dede:pagelist listsize='5' listitem='index,end,pre,next,pageno'/} </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {dede:include filename="footer.htm"/} </div>
+<script type="text/javascript" src="/skin/js/jquery.global.js"></script> 
+<script type="text/javascript" src="/skin/js/jquery.form.js"></script> 
+<script type="text/javascript" src="/skin/js/lightbox.min.js"></script> 
+<script type="text/javascript" src="/skin/js/jquery.custom.js"></script>
+</body>
+</html>

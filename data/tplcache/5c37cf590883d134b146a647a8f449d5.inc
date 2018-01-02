@@ -1,0 +1,1 @@
+<a class="btn-default-b btn-default-w btn-large-w g-click-to-link" href="[field:typelink/]" >查看更多</a>

@@ -1,0 +1,40 @@
+<?php
+$z[0]=Array("field","",299,318);
+$z[0][4]=array();
+$z[0][4]['name']="title";
+$z[1]=Array("global","",319,345);
+$z[1][4]=array();
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("field","",386,415);
+$z[2][4]=array();
+$z[2][4]['name']="keywords";
+$z[3]=Array("field","",455,513);
+$z[3][4]=array();
+$z[3][4]['name']="description";
+$z[3][4]['function']="html2text(@me)";
+$z[4]=Array("include","",3295,3330);
+$z[4][4]=array();
+$z[4][4]['filename']="head.htm";
+$z[5]=Array("field","",3745,3803);
+$z[5][4]=array();
+$z[5][4]['name']="typeid";
+$z[5][4]['function']="GetTopTypename(@me)";
+$z[6]=Array("channel","\r\n                <li class=\"li-parent\">\r\n                  <div class=\"div-parent\"> <a href=\"[field:typeurl/]\">[field:typename/]</a><span class=\"menu_simpline_cur\"></span></div>\r\n                </li>\r\n                ",3924,4422);
+$z[6][4]=array();
+$z[6][4]['type']="son";
+$z[6][4]['currentstyle']="<li class='li-parent'> <div class='div-parent'><a href='~typelink~' class='thisclass'>~typename~</a><span class='menu_simpline_cur'></span></div> </li>";
+$z[7]=Array("field","",5325,5354);
+$z[7][4]=array();
+$z[7][4]['name']="position";
+$z[8]=Array("list","\r\n                <div class=\"w-prd-list-cell\">\r\n                  <div class=\"w-prd-list-cell-in\">\r\n                    <div class=\"w-prd-con\">\r\n                      <div class=\"w-prd-imgbox\" title=\"[field:title/]\"> <a href=\"[field:arcurl/]\" class=\"img-count w-prd-img\">\r\n                        <div class=\"aspectRatio\" style=\"padding-bottom:100%\"></div>\r\n                        <div class=\"img-count-in\"><img alt=\"[field:title/]\" src=\"[field:picname/]\"/></div>\r\n                        </a> </div>\r\n                      <div class=\"w-prd-infobox\"  style=\"text-align:left\">\r\n                        <h2 class=\"w-prd-name\" title=\"[field:title/]\"> <a href=\"[field:arcurl/]\">[field:title/]</a> </h2>\r\n                        <div class=\"w-prd-sum\">[field:typename/]</div>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                ",5524,6460);
+$z[8][4]=array();
+$z[8][4]['pagesize']="8";
+$z[9]=Array("pagelist","",6894,6960);
+$z[9][4]=array();
+$z[9][4]['listsize']="5";
+$z[9][4]['listitem']="index,end,pre,next,pageno";
+$z[10]=Array("include","",7041,7078);
+$z[10][4]=array();
+$z[10][4]['filename']="footer.htm";
+
+?>

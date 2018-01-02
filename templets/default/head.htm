@@ -1,0 +1,79 @@
+<div class="w-container w-header w-header-common">
+  <div class="row clearfix">
+    <div class="mobile-nav-toggle"><i class="fa fa-navicon fa-2x"></i></div>
+    <div class="nav_right_mask"></div>
+    <div class="col-logo">
+      <div class="w-logo">
+        <h1 style="display:none;"><a href="/"></a></h1>
+        <a  href="/"  class="w-logo-img"> <img src="/skin/images/logo.png"/> </a> </div>
+    </div>
+    <div class="col-right clearfix">
+      <div class="menu-tel">
+        <div class="w-nav g-active-add">
+          <div class="w-nav-in">
+            <ul class="nav_inner clearfix">
+              <li {dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='active' ":@me="";{/dede:field}><a href="/" >首页</a><i class="nav_simpline_cur"></i></li>
+              {dede:channelartlist typeid='top' currentstyle='active'}
+              <li class='{dede:field.currentstyle/}'>
+                <div class="li-parent-div li-parentOne-div"><a href ="{dede:field name='typeurl'/}" >{dede:field name='typename'/}<i class="fa fa-plus"></i></a></div>
+                <i class="nav_simpline_cur"></i>
+                <div class="submenu">
+                  <div class="back-div"><i class="fa fa-angle-left"></i><span>返回</span></div>
+                  <ul>
+                    {dede:channel type='son' noself='yes'}
+                    <li><a href ="[field:typeurl/]">[field:typename/]</a></li>
+                    {/dede:channel}
+                  </ul>
+                </div>
+              </li>
+              {/dede:channelartlist}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="topLogBox">
+        <div class="topLogBox-in">
+          <div class="col-com"> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="w-container bannerBox ">
+  <div class="banner"> <img src="/skin/images/banner.jpg" alt="banner" title="banner" style=""/> <a href="javascript:void(0);" target="_self"><span id="d2339095f5ae1d6fcc232b0615a1a2a8" style="display:none;">none</span></a> </div>
+</section>
+<div class="menu-pc">
+  <div class="menu_mask"></div>
+  <div class="menu-pc-in clearfix">
+    <div class="column column3">
+      <div class="col-logo">
+        <div class="w-logo">
+          <h1 style="display:none;"><a href="/"></a></h1>
+          <a  href="/"  class="w-logo-img"  > <img src="/skin/images/logo.png"/> </a> </div>
+      </div>
+    </div>
+    <div class="column column9 clearfix">
+      <div class="w-nav g-active-add">
+        <div class="w-nav-in">
+          <ul class="nav_inner clearfix" id="g-web-ul-menu" style="display:none;">
+            <li {dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='active' ":@me="";{/dede:field}><a href="/" >首页</a><i class="nav_simpline_cur"></i></li>
+            {dede:channelartlist typeid='top' currentstyle='active'}
+            <li class='{dede:field.currentstyle/}'>
+              <div class="li-parent-div li-parentOne-div"><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}<i class="fa fa-plus"></i></a></div>
+              <i class="nav_simpline_cur"></i>
+              <div class="submenu">
+                <div class="back-div"><i class="fa fa-angle-left"></i><span>返回</span></div>
+                <ul>
+                  {dede:channel type='son' noself='yes'}
+                  <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                  {/dede:channel}
+                </ul>
+              </div>
+            </li>
+            {/dede:channelartlist}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

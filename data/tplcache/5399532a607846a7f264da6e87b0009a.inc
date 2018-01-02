@@ -1,0 +1,1 @@
+<a href="[field:typelink/]" style="border:3px solid #fff; display:inline-block; *display:inline; *zoom:1; color:#fff; padding:10px 57px; font-size:115%; text-decoration:none;">查看更多</a>
